@@ -1,0 +1,65 @@
+$blueish: blue;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: yellow;
+  height: 100vh;
+  color: darkblue;
+}
+
+h1 {
+  color: red;
+  font-size: 80px;
+  font-family: Impact;
+}
+
+h3 {
+  color: $blueish;
+  font-size: 30px;
+  margin: 3rem 0;
+}
+
+button {
+  background: $blueish;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  // &:hover {
+  //   background-color: green;
+  // }
+  transition: style 0.5s ease-in-out;
+  &:hover,
+  &:focus {
+    animation: style 1.2s;
+    box-shadow: 0 0 0 2em transparent;
+  }
+}
+
+.q-wrap {
+  width: 100%;
+  #q-output {
+    font-size: 33px;
+    width: 62%;
+    margin: 1rem auto;
+    color: darkblue;
+  }
+  #a-output {
+    font-size: 35px;
+    color: green;
+  }
+}
+
+@keyframes style {
+  0% {
+    box-shadow: 0em 0 0 0.1rem aquamarine;
+  }
+}
